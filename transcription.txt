@@ -1,0 +1,35 @@
+Hello everyone here in freecodecamp, today; and welcome to this course in NoSQL.
+My name is Ania Kubow, and I'm a software developer and course creator on Youtube as well ass your instructor.
+In this video course, I will be demystifying what NoSQL is clarifying the difference between SQL and NoSQL as well as going into  a deep dive of thee four main types of NoSQL databases.
+with each deep dive, we will be approaching each learning as an explanation, example and exercise. So the three is in order to fully grasp the topic we are discussing.
+After that, we will go straight into using what we have learned with two real life use cases.
+By use cases, I mean, we will be getting data into real life projects using a document API, and the GraphQL API to communicate with our newly made database.
+And finally, we'll be wrapping up with where to go next. Don't worry if none of this makes sense to you now.
+This is what the tutorial is for.
+As always if you like what we are doing here at Freecodecamp, please do get that subscribe button and click as it would really help us on our mission to provide a broad spectrum of learning materials right here free access for you.
+Now lets get to it.
+
+# WHAT IS NoSQL
+
+so the first thing you need to know is that NoSQL is an approach to database management.
+It is considered to be super flexible as it allows for a variety of data models, such as: 
+– key value, 
+– document,
+– y column || tabular,
+– graph,
+
+formats.
+
+These are thee four we will be looking at today, as well as a new emerging trend of multi model databases.
+So we have already mentioned that NoSQL databases are casually considered to be flexible. 
+But officially the defining characteristics of NoSQL databases are considered to be that they are: 
+– non relational,
+– distributed,
+– scalable.
+
+Distributed refers to to running on clusters of machines globally distributed to support apps at two different geographical locations.
+And scalable means that NoSQL databases are able to store and query life scale data, as well as support high transaction throughput scaling horizontally.
+
+In addition to this, they're also partition tolerant.
+
+
