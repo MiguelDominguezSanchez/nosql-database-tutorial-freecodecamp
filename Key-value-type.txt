@@ -1,0 +1,52 @@
+Connected as 0.miguel.dominguez@gmail.com.
+Connected to cndb at cassandra.ingress:9042.
+[cqlsh 6.8.0 | DSE DB 4.0.0.6816 | CQL spec 3.4.5 | Native protocol v4]
+Use HELP for help.
+token@cqlsh> use keyvalue;
+token@cqlsh:keyvalue> describe table "shop_inventory";
+
+CREATE TABLE keyvalue.shop_inventory (
+    key text PRIMARY KEY,
+    value text
+) WITH additional_write_policy = '99PERCENTILE'
+    AND bloom_filter_fp_chance = 0.01
+    AND caching = {'keys': 'ALL', 'rows_per_partition': 'NONE'}
+    AND comment = ''
+    AND compaction = {'class': 'org.apache.cassandra.db.compaction.UnifiedCompactionStrategy'}
+    AND compression = {'chunk_length_in_kb': '64', 'class': 'org.apache.cassandra.io.compress.LZ4Compressor'}
+    AND crc_check_chance = 1.0
+    AND default_time_to_live = 0
+    AND gc_grace_seconds = 864000
+    AND max_index_interval = 2048
+    AND memtable_flush_period_in_ms = 0
+    AND min_index_interval = 128
+    AND read_repair = 'BLOCKING'
+    AND speculative_retry = '99PERCENTILE';
+
+token@cqlsh:keyvalue> select * from "shop_inventory";
+
+ key    | value
+--------+---------
+  3dr53 |   beans
+ 42dhww | shampoo
+
+(2 rows)
+token@cqlsh:keyvalue> select * from "shop_inventory";
+
+ key    | value
+--------+---------
+  3dr53 |   beans
+ 42dhww | shampoo
+
+(2 rows)
+token@cqlsh:keyvalue> 
+
+// graphql playground
+
+mutation {
+	deleteshop_inventory (value: {value: "dhe342"}){
+    value {
+      key
+    }
+  }
+}

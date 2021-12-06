@@ -1,0 +1,15 @@
+X-Cassandra-Token
+
+AstraCS:MFMPnxqqeGYyFAzbitqoZbDo:9ebd4283855158af4025fd6d415da8690824d6190997bfb17c5e33d77bd21f81 – no valid
+
+AstraCS:WtRZvrBdoGhfZqCFOKCFzFvP:02591434b181acbaf618046cecc6011f8ff72d4e4c201b59e1828d54ca1dff06
+
+//
+
+{
+  "documentId": "216761aa-61ff-4c4d-b214-8f2e3f256c09"
+}
+
+//
+
+https://42ae8dc7-26eb-4c7a-996b-0e6871c7fc9c-eu-central-1.apps.astra.datastax.com/api/rest/v2/namespaces/document/collections/my_first_collection/216761aa-61ff-4c4d-b214-8f2e3f256c09
